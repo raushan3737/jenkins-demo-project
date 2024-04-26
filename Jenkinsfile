@@ -1,17 +1,34 @@
 pipeline {
 
-	agent any
+agent any
 
-	stages {
+stages {
 
-		stage('build')
+	stage('build')
 
-			{
 
-				steps {
-					echo "Hello world!"
-					python3 main.py		
-	       			}
-			}
-			
+		{
+
+
+			steps	{
+
+
+					// bat 'npm install typescript'
+
+
+					// bat 'npm install cypress --save-dev'              
+
+
+					// bat 'npm run cypress:run'
+
+        				echo "Hello world!"
+					python3 main.py
+
+		}
+
+
+       	}
+
+	}	
+
 }
