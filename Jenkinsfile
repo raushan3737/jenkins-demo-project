@@ -1,8 +1,13 @@
 pipeline {
 
+
+
+
 agent any
 
+
 stages {
+
 
 	stage('build')
 
@@ -21,13 +26,13 @@ stages {
 
 					// bat 'npm run cypress:run'
 
-        				echo "Hello world!"
-					python3 main.py
+        echo "Hello world!"
 
-		}
+				}
 
 
        	}
+
 
 	}	
 
